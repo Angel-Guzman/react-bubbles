@@ -22,7 +22,7 @@ const ColorList = ({ colors, updateColors }) => {
     // think about where will you get the id from...
     // where is it saved right now?
     axiosWithAuth()
-    .put(`/api/colors/${colors.id}`, colors)
+    .put(`/api/colors/${colorToEdit.id}`, colorToEdit)
     .then(res => {
       console.log(res)
       const newColors = colors.map(color => {
