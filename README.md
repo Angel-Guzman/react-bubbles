@@ -27,9 +27,33 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+
+- A token can be used for client-side authentication. For example the token will be provided by the server,
+which can be stored on the client-side with local storage, or session storage. The server can read that token and
+allow the client's permission to change. Therefore allowing the client-side to have only have access if it has that
+token.
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+
+- One way is by having protected routes that will only render if the client-side is authenticated with a token
+from the server. An example of this can be a login form that sends the login data to the server. The server checks
+the login data with its own database, and if it authenticates the user, the server provides a token to the client-side.
+
 - [ ] Describe how web servers work.
+
+- A web server is a computer that stores code for a website, or a program that runs on that type of a computer.
+The physical computers are hosting our website/apps and the software is what's called a web server. The web server
+software's main purpose is to provide the code to users that it retrieves from your project. Domain names and URLS
+are what's used to access web pages that are stored in the web servers spread all across the world. So computers
+connect to the internet, locate a server computer through a URL and domain name, then retrieve that data from the server.
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+- 
+PUT/POST - C create
+GET - R read
+PUT/POST/PATCH - U update
+DELETE - D delete
 
 
 ## Project Set Up
